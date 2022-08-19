@@ -1,0 +1,21 @@
+* {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+input {
+    text-align: left;
+    background: rgb(61, 59, 82);
+    font-size: 30px;
+    color: rgb(197, 202, 202);
+}
+
+::placeholder {
+    color: grey;
+}
+
+.new_task >.add_new_task {
+    height: 30px;
+}
+
+
