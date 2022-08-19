@@ -1,6 +1,5 @@
 let input = document.querySelector('.inputt');
 let btn = document.querySelector(".add_new_task");
-let out = document.querySelector(".out");
 let ol = document.querySelector(".oll");
 
 let tasks = [];
@@ -15,12 +14,15 @@ const createTask = () => {
 }
 
 const showTasks = () => {
-    // tasks.map(task => ol.createElement('li').innerHTML = task);
-    tasks.map(task => ol.innerHTML = `<li>${task}</li>`);
+    tasks.map(task => 
+        {
+            let li = document.createElement('li');
+            li.innerHTML = task;
+            ol.appendChild(li)
+        })
 }
 
 btn.addEventListener("click", createTask);
-
 
 
 
