@@ -11,12 +11,12 @@ const createTask = () => {
     console.log(tasks);
     input.value = "";
 
-    showTasks;
+    showTasks();
 }
 
 const showTasks = () => {
-    // tasks.map(task => ol.createElement('li').innerHTML = `<li>${task}</li>`); not working..
-    // tasks.map(task => `<li>${task}</li>`) also doesn't working
+    // tasks.map(task => ol.createElement('li').innerHTML = task);
+    tasks.map(task => ol.innerHTML = `<li>${task}</li>`);
 }
 
 btn.addEventListener("click", createTask);
