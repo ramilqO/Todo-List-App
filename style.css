@@ -3,6 +3,7 @@
     box-sizing: border-box;
 }
 
+
 input {
     text-align: left;
     background: rgb(61, 59, 82);
@@ -16,6 +17,10 @@ input {
 
 .new_task >.add_new_task {
     height: 30px;
+}
+
+.task {
+    text-align: left;
 }
 
 
