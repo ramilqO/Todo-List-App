@@ -10,16 +10,9 @@ const createTask = () => {
     console.log(tasks);
     input.value = "";
 
-    showTasks();
-}
-
-const showTasks = () => {
-    tasks.map(task => 
-        {
-            let li = document.createElement('li');
-            li.innerHTML = task;
-            ol.appendChild(li)
-        })
+    let li = document.createElement('li'); //create a dom-element in JS memory
+    li.innerHTML = taskName;
+    ol.appendChild(li) //past a dom-element in my layout
 }
 
 btn.addEventListener("click", createTask);
